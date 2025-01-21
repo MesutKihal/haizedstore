@@ -1,0 +1,27 @@
+{% extends 'main/index.html' %}
+{% block content %}
+{% load static %}
+<div class="row">
+	<h2>خدمات</h2>
+</div>
+<div class="row">
+	<div id="requests" class="card">
+		<h3>طلبات خطية</h3>
+		<img width="128" src="{% static 'img/request-img.jpg' %}"></img>
+	</div>
+	<div id="forms" class="card">
+		<h3>إستمارات</h3>
+		<img width="128" src="{% static 'img/formulaire-img.png' %}"></img>
+	</div>
+	<div id="declares" class="card">
+		<h3>تصريحات شرفية</h3>
+		<img width="128" src="{% static 'img/declaration-img.jpg' %}"></img>
+	</div>
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+	<script src="{% static 'js/services.js' %}"></script>
+{% endblock %}

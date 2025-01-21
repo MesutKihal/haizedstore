@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	{% load static %}
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Haized Store</title>
+		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+		<script src="https://kit.fontawesome.com/d75b1ad41e.js" crossorigin="anonymous"></script>
+	</head>
+	<body dir="rtl">
+		<main>
+			<header>
+				<h1>HaizedTech</h1> 
+				<img src="https://scontent.fczl2-1.fna.fbcdn.net/v/t39.30808-6/469080782_122198657360211544_1799803758905017238_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=x8bHRG41zSYQ7kNvgGGgibC&_nc_zt=23&_nc_ht=scontent.fczl2-1.fna&_nc_gid=AZjfTCMAkyvPJSf77h8s8ZJ&oh=00_AYBuUZTmrIsAQjfYMSvOQSg_dOn55PFFXUeswJ1OVatWmg&oe=678EA6CD"></img>
+			</header>
+			<nav>
+				<a href="{% url 'services' %}"><i class="fa-solid fa-puzzle-piece"></i> خدمات</a>
+				<a href="{% url 'store' %}"><i class="fa-solid fa-store"></i> متجر</a>
+				<a href="{% url 'contact' %}"><i class="fa-solid fa-user"></i> تواصل معنا</a>
+				<a></a>
+			</nav>
+			<div id="bodyContent">
+				{% block content %}
+				
+				{% endblock%}
+			</div>
+		</main>
+		{% block script %}
+		{% endblock %}
+	</body>
+</html>
